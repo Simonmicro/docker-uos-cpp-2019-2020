@@ -1,6 +1,6 @@
 FROM debian:buster
 
-LABEL description="This image provides a valid runtime env for the automatic execution of the code validity checks, required for the course C++ at the University Osnabrück."
+LABEL description="This image provides a valid runtime env for the automatic execution of the code validity checks, documemtation and build artifcats, required for the lesson 'C++ 2019/2020' at the University Osnabrück."
 
 RUN apt-get update && \
     apt-get install -y bash astyle git && \
