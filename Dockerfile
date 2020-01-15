@@ -5,7 +5,7 @@ LABEL description="This image provides a valid runtime env for the automatic exe
 RUN apt-get update && \
     apt-get install -y bash astyle git && \
     apt-get install -y doxygen graphviz && \
-    apt-get install -y cmake make g++ libsdl2-dev libsdl2-image-dev libgsl-dev && \
+    apt-get install -y cmake make g++ libsdl2-dev libsdl2-image-dev libgsl-dev libboost-all-dev && \
     apt-get autoclean && \
     apt-get autoremove -y && \
     apt-get clean && \
